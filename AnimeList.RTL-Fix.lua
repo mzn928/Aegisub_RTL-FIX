@@ -1,11 +1,11 @@
-﻿-- Aegisub Automation 4 Lua RTL Fix
+﻿-- Aegisub Automation 4 Lua RTL Fix by AnimeList Team (Shinsekai_Yuri)
 -- Macro that adds U+202B unicode character to start of all selected lines
 
 local tr = aegisub.gettext
 
-script_name = tr"RTL-FIX"
+script_name = tr"Fix RTL"
 script_description = tr"Adds U+202B unicode character to start of all selected lines, Thus fixing the RTL problem in Aegisub"
-script_author = "Shinsekai_Yuri"
+script_author = "AnimeList Team by Shinsekai_Yuri"
 script_version = "1.2.1"
 
 local u202b = "\226\128\171"
