@@ -20,4 +20,4 @@ If you are on linux, place the script in `~/.aegisub/automation/autoload` (Creat
 yourself if it doesnt exist).
 
 # Tips
-You can create hotkey for executing this automation to use it much easier. (Command: automation/lua/rtl-fix/Fix RTL)
+You can create a hotkey for executing this automation to make the usage much easier. (Command: automation/lua/rtl-fix/Fix RTL)
