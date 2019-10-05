@@ -6,7 +6,7 @@ and after line breaks (\N) and that magicaly fixes all the RTL problems!
 
 The script has been tested with Persian, But it should work with all the other RTL languages.
 
-AnimDL.ir | @AnimeList_ir
+[AnimDL.ir](https://www.animdl.ir) | [@AnimeList_ir](https://t.me/animelist_ir)
 
 # How to install
 If you are on windows, you need to copy the script in the Autoload
