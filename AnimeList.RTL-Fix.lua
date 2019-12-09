@@ -1,4 +1,4 @@
-﻿-- Aegisub Automation 4 Lua RTL Fix by AnimeList Team (Shinsekai_Yuri)
+-- Aegisub Automation 4 Lua RTL Fix by AnimeList Team (Shinsekai_Yuri)
 -- Macro that adds U+202B unicode character to start of all selected lines
 
 local tr = aegisub.gettext
@@ -11,6 +11,7 @@ script_version = "1.2.1"
 local u202b = "\226\128\171"
 local n = "\\n"
 local N = "\\N"
+local bracket = "}"
 local function starts_with(str, start)
 	return str:sub(1, #start) == start
 end
@@ -20,6 +21,7 @@ function rtl_fix(subtitles, selected_lines, active_line)
 		local l = subtitles[i]
 		if string.match(l.text, u202b) then l.text = l.text:gsub(u202b, "") end
 		l.text = u202b .. l.text
+		if string.match(l.text, bracket) then l.text = l.text:gsub(bracket, bracket .. u202b) end
 		if string.match(l.text, N) then l.text = l.text:gsub(N, N .. u202b) end
 		if string.match(l.text, n) then l.text = l.text:gsub(n, n .. u202b) end
 		subtitles[i] = l
