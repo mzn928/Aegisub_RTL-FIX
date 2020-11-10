@@ -22,10 +22,10 @@ function rtl_fix(subtitles, selected_lines, active_line)
 		local l = subtitles[i]
 		if string.match(l.text, u202b) then l.text = l.text:gsub(u202b, "") end
 		l.text = u202b .. l.text
-		if string.match(l.text, u202b..lbracket) then l.text = l.text:gsub(u202b..lbracket, lbracket) end
-		if string.match(l.text, rbracket) then l.text = l.text:gsub(rbracket, rbracket .. u202b) end
 		if string.match(l.text, N) then l.text = l.text:gsub(N, N .. u202b) end
 		if string.match(l.text, n) then l.text = l.text:gsub(n, n .. u202b) end
+		if string.match(l.text, u202b..lbracket) then l.text = l.text:gsub(u202b..lbracket, lbracket) end
+		if string.match(l.text, rbracket) then l.text = l.text:gsub(rbracket, rbracket .. u202b) end
 		subtitles[i] = l
 	end
 	aegisub.set_undo_point(script_name)
