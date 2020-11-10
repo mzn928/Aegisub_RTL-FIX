@@ -6,7 +6,7 @@ local tr = aegisub.gettext
 script_name = tr"Fix RTL"
 script_description = tr"Adds U+202B unicode character to start of all selected lines, Thus fixing the RTL problem in Aegisub"
 script_author = "AnimeList Team by Shinsekai_Yuri"
-script_version = "1.2.2"
+script_version = "1.2.3"
 
 local u202b = "\226\128\171"
 local n = "\\n"
