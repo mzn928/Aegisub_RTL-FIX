@@ -1,4 +1,6 @@
 # Aegisub RTL-Fix
+**This repository is now deprecated. You can get the latest version of this script from [Aegisub Persian Toolkit](https://github.com/mzn928/Aegisub_Persian-Toolkit).**
+
 Simple automation script for Aegisub to fix RTL formatting in subtitles by AnimeList Team.
 
 Script works by adding {U+202B} Unicode character to start of each line
